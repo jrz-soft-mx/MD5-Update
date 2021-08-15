@@ -18,7 +18,6 @@ When your app start call the library, this get JSON file list from update folder
 
 ### Index.php
 
-
 ````php
 <?php
 $_dat = array();
@@ -34,6 +33,7 @@ echo json_encode($_dat, JSON_UNESCAPED_UNICODE);
 ````
 
 ### Your App (HelloWorld.cs)
+
 ````csharp
 using System;
 using System.Diagnostics;
@@ -47,39 +47,18 @@ namespace HelloWorld
         {
 		
             InitializeComponent();
-			string strUrl = "http://yourdomain.com/app/";
-			if (MD5Update.MD5Update.Check(strUrl, true))
-			{
-			Process.Start(AppDomain.CurrentDomain.BaseDirectory + @"updt.exe", AppDomain.CurrentDomain.FriendlyName + " " + Process.GetCurrentProcess().ProcessName);
-		}
+            string strUrl = "http://yourdomain.com/app/";
+            if (MD5Update.MD5Update.Check(strUrl, true))
+            {
+                Process.Start(AppDomain.CurrentDomain.BaseDirectory + @"updt.exe", AppDomain.CurrentDomain.FriendlyName + " " + Process.GetCurrentProcess().ProcessName);
+            }
 	}
+    }
 }
 ````
 
-### Your App (HelloWorld.cs)
-````csharp
-using System;
-using System.Diagnostics;
-using System.Windows.Forms;
+### Updt.exe (Tool for replace yourapp).
 
-namespace HelloWorld
-{
-    public partial class HelloWorld : Form
-    {
-        public HelloWorld()
-        {
-		
-            InitializeComponent();
-			string strUrl = "http://yourdomain.com/app/";
-			if (MD5Update.MD5Update.Check(strUrl, true))
-			{
-			Process.Start(AppDomain.CurrentDomain.BaseDirectory + @"updt.exe", AppDomain.CurrentDomain.FriendlyName + " " + Process.GetCurrentProcess().ProcessName);
-		}
-	}
-}
-````
-
-### Updt.exe
 ````csharp
 using System;
 using System.Collections.Generic;
