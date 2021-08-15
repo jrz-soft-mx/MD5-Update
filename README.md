@@ -1,3 +1,5 @@
+# ![MD5-Updater](Tools/Logo.png)
+
 MD5 Update is a library written in C# for easily allow easy add update functionality to desktops applications only need webserver with PHP for publish the update directory. 
 
 ## The NuGet Package
@@ -17,6 +19,7 @@ When your app start call the library, this get JSON file list from update folder
 ## Using the code
 
 ### Index.php
+File aviable on Tools/Tools.zip
 
 ````php
 <?php
@@ -58,6 +61,7 @@ namespace HelloWorld
 ````
 
 ### Updt.exe (Tool for replace yourapp).
+File aviable on Tools/Tools.zip
 
 ````csharp
 using System;
