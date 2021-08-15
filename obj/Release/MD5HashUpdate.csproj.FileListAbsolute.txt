@@ -1,0 +1,8 @@
+C:\Labinnsoft\MD5HashUpdate\bin\Release\MD5HashUpdate.dll
+C:\Labinnsoft\MD5HashUpdate\bin\Release\MD5HashUpdate.pdb
+C:\Labinnsoft\MD5HashUpdate\bin\Release\Newtonsoft.Json.dll
+C:\Labinnsoft\MD5HashUpdate\bin\Release\Newtonsoft.Json.xml
+C:\Labinnsoft\MD5HashUpdate\obj\Release\MD5HashUpdate.csproj.CoreCompileInputs.cache
+C:\Labinnsoft\MD5HashUpdate\obj\Release\MD5HashUpdate.dll
+C:\Labinnsoft\MD5HashUpdate\obj\Release\MD5HashUpdate.pdb
+C:\Labinnsoft\MD5HashUpdate\obj\Release\MD5HashUpdate.csproj.AssemblyReference.cache
