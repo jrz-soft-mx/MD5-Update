@@ -23,10 +23,10 @@ When your app start call the library, this get JSON file list from update folder
 $_dat = array();
 $_dir=new RecursiveDirectoryIterator(".");
 foreach (new RecursiveIteratorIterator($_dir) as $_itm) {
-	$_fil = str_replace(".".DIRECTORY_SEPARATOR, "", $_itm);
-	if(!is_dir($_fil) && $_fil != "index.php"){		
-		$_dat[]=array('StrFil' => "$_fil", 'StrMd5' => strtoupper(md5_file($_fil)), 'lonSiz' => filesize($_fil));
-	}
+    $_fil = str_replace(".".DIRECTORY_SEPARATOR, "", $_itm);
+    if(!is_dir($_fil) && $_fil != "index.php"){		
+        $_dat[]=array('StrFil' => "$_fil", 'StrMd5' => strtoupper(md5_file($_fil)), 'lonSiz' => filesize($_fil));
+    }
 }
 echo json_encode($_dat, JSON_UNESCAPED_UNICODE);
 ?>
