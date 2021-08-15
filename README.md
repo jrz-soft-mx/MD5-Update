@@ -1,4 +1,4 @@
-# ![MD5-Updater](Tools/Logo.png)
+# ![MD5-Updater](Tools/logo.png)
 
 MD5 Update is a library written in C# for easily allow easy add update functionality to desktops applications only need webserver with PHP for publish the update directory. 
 
