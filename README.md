@@ -108,13 +108,13 @@ namespace MD5Updt
                 string strAppUpdate = AppDomain.CurrentDomain.BaseDirectory + @"updt\" + strAppName;
                 if (!File.Exists(strAppMain))
                 {
-                    MessageBox.Show("App Excutable dosent exists");
+                    MessageBox.Show("App Executable dosent exists");
                     Application.Exit();
                     return;
                 }
                 if (!File.Exists(strAppUpdate))
                 {
-                    MessageBox.Show("App Excutable Updated dosent exists");
+                    MessageBox.Show("App Executable Updated dosent exists");
                     Application.Exit();
                     return;
                 }
